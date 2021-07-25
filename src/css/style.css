@@ -1,0 +1,265 @@
+@font-face{
+  font-family: "SNES";
+  src: url("SnesItalic-1G9Be.ttf") format("truetype");
+}
+.html {
+  background-color: #a6a8af;
+  margin: 5rem;
+}
+.wrapper {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  display: grid; 
+  grid-template-columns: repeat(4, 100px) 300px 80px 90px 35px 75px 45px 75px; 
+  grid-template-rows: 75px 70px 50px 25px 15px 60px 30px 60px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . . . ."
+    ". . . . . . . . buttons__clicker-button . ."; 
+}
+.header {
+  width: 750px;
+}
+.console {
+  background-image: url("images/controller1.png");
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+  height: 517.5px;
+  width: 1200px;
+}
+
+.info-dropbtn {
+    background-color: #7f6dd2;
+    color: #d3dcde;
+    padding: 16px;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .info-dropbtn:hover {
+    background-color: #aba5e9;
+  }
+  
+  .info-dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .info-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d3dcde;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .info-dropdown-content a {
+    color: #35266a;
+    font-family: SNES;
+    font-size: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .info-dropdown a:hover {background-color: #aba5e9;}
+  
+  .info-show {display: block;}
+  
+  .inspiration-dropbtn {
+    background-color: #7f6dd2;
+    color: #d3dcde;
+    padding: 16px;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .inspiration-dropbtn:hover {
+    background-color: #aba5e9;
+  }
+  
+  .inspiration-dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .inspiration-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d3dcde;
+    min-width: 160px;
+    font-family: SNES;
+    font-size: 20px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .inspiration-dropdown-content a {
+    color: #35266a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .inspiration-dropdown a:hover {background-color: #aba5e9;}
+  
+  .inspiration-show {display: block;}
+
+  .aboutme-modal {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+
+  .modal-button {
+    background-color: #7f6dd2;
+    color: #d3dcde;
+    padding: 16px;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .modal-button:hover {
+    background-color: #aba5e9;
+  }
+
+  .about-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #d3dcde;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color:#35266a;
+    font-family: SNES;
+    font-size: 30px;
+  }
+  
+  .modal-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .controller{
+    max-width: 1000px;
+    max-height: 1000px;
+    align-self: center;
+  }
+  .player-stats-container{
+    display: grid;
+    grid-template-columns: 400px 315px;
+    grid-template-rows: 100px 150px;
+    grid-template-areas: 
+    ". ."
+    ". player-stats";
+  }
+  .player-stats {
+    grid-area: player-stats;
+    color: #3f3f3f;
+    padding: 16px;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .buttons {
+    display: grid; 
+    grid-template-columns: repeat(4, 100px) 300px 90px 70px 45px 75px 45px 70px; 
+    grid-template-rows: 45px 55px 45px 50px 40px 55px 37px 58px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . . . . . . . ."
+      ". . . . . . . . . . ."
+      ". . . . . . . . . . ."
+      ". . . . . . . . buy-mult . ."
+      ". . . . . . . . . . ."
+      ". . . . . . buy-auto . . . reset"
+      ". . . . . . . . . . ."
+      ". . . . . . . . clicker-button . ."; 
+  }
+  .buttons__clicker-button {
+    grid-area: clicker-button;
+    background-color: #4f3388;
+    color: #d3dcde;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons__buy-auto-clicker {
+    grid-area: buy-auto;
+    background-color: #a29cc0;
+    color: #d3dcde;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buttons__buy-multiplier {
+    grid-area: buy-mult;
+    background-color: #a29cc0;
+    color: #d3dcde;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buttons__reset {
+    grid-area: reset;
+    background-color: #4f3388;
+    color: #d3dcde;
+    font-family: SNES;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Maker</title>
+    <link rel="stylesheet" href="src\css\style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="console">
+            <header class="header">
+                <nav class="links">
+                    <div class="info-dropdown">
+                        <button onclick="infoFunction()" class="info-dropbtn">Company Info</button>
+                        <div id="infoDropdown" class="info-dropdown-content">
+                            <a>You've just become a the new CEO of America's Video Game company!</a>
+                            <a>You better start making some new consoles for everyone before they get upset!</a>
+                            <a>Use the controller to make all the consoles like your life depends on it!</a>
+                            <a>The way some videogame fans are it might actually be true!</a>
+                        </div>
+                    </div>
+                    <div class="inspiration-dropdown">
+                        <button onclick="inspirationFunction()" class="inspiration-dropbtn">Inspiration for
+                            Game</button>
+                        <div id="inspirationDropdown" class="inspiration-dropdown-content">
+                            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
+                            <a href="https://www.fontspace.com/snes-font-f26537" target="_blank">Snes Italic Font</a>
+                            <a href="https://www.pngfind.com/download/iJxJTm_3840-x-2160-30-1-super-nintendo-controller/" target="_blank">Snes Controller</a>
+                            <a href="https://www.nintendo.com"target="_blank">Nintendo</a>
+                        </div>
+                    </div>
+                    <div class="aboutme-modal">
+                        <button id="modalBtn" class="modal-button">About Creator</button>
+                        <div id="aboutModal" class="about-modal">
+                            <div class="modal-content">
+                                <span class="modal-close">&times;</span>
+                                <p>Hi my name is George Fought. I'm a Full-Stack Java developer.</p>
+                                <p>Thanks for playing my Console Maker game. Please checkout my
+                                    <a href="https://georgefought.github.io/" target="_blank">portfolio</a> and
+                                    <a href="https://github.com/GeorgeFought" target="_blank">github</a>.</p>
+                                <p>Don't forget to check out my <a href="https://www.linkedin.com/in/georgefought/"
+                                        target="_blank">LinkedIn</a> as well.</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="console">
+
+                <div class="player-stats-container">
+                    <section class="player-stats">
+                        <div class="player-stats__donut-count">Donuts: </div>
+                        <div class="player-stats__auto-clicker-count">Auto Clickers: </div>
+                        <div class="player-stats__auto-clicker-cost">Auto Clicker Cost: </div>
+                        <div class="player-stats__multiplier-count">Donut Multipliers: </div>
+                        <div class="player-stats__multiplier-cost">Multiplier Cost: </div>
+                        <div class="player-stats__current-multiplier">Current Multiplier: </div>
+                    </section>
+                    <section class="buttons">
+                        <button class="buttons__clicker-button">Make Donuts</button>
+                        <button class="buttons__buy-auto-clicker">Buy Auto Clicker</button>
+                        <button class="buttons__buy-multiplier">Buy Donut Multiplier</button>
+                        <button class="buttons__reset">RESET GAME</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/src/js/app.js" type="module"></script>
+    <script src="/src/js/info-dropdown.js"></script>
+    <script src="/src/js/inspiration-dropdown.js"></script>
+    <script src="/src/js/about-modal.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>
